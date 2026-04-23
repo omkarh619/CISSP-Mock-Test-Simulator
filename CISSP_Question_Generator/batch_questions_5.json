@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "GEN_2026_451",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following is considered 'In-Band' authentication?",
+      "difficulty_b": -1.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A push notification to a mobile app on a separate device.", "is_correct": 0, "rationale": "This is Out-of-Band (OOB)."},
+        {"text": "A password entered into the same web form as the username.", "is_correct": 1, "rationale": "In-band authentication uses the same communication channel for both the identity claim and the authentication factor."},
+        {"text": "A phone call from an automated system to verify a login.", "is_correct": 0, "rationale": "This is Out-of-Band (OOB)."},
+        {"text": "A code sent via a separate email account.", "is_correct": 0, "rationale": "This is Out-of-Band (OOB)."}
+      ]
+    },
+    {
+      "id": "GEN_2026_452",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is the primary goal of 'Separation of Duties'?",
+      "difficulty_b": -1.5,
+      "is_pretest": 0,
+      "options": [
+        {"text": "To make sure everyone has a backup person for their job.", "is_correct": 0, "rationale": "This is redundancy/cross-training."},
+        {"text": "To prevent any single person from having enough power to complete a sensitive process without oversight.", "is_correct": 1, "rationale": "Separation of duties (SoD) requires multiple people to complete a critical task, reducing the risk of fraud, error, or malicious activity by a single individual."},
+        {"text": "To ensure that all employees take their mandatory vacations.", "is_correct": 0, "rationale": "This is a separate administrative control, though often used with SoD to detect fraud."},
+        {"text": "To divide the network into different security zones.", "is_correct": 0, "rationale": "This is network segmentation."}
+      ]
+    },
+    {
+      "id": "GEN_2026_453",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the Mandatory Access Control model, what is the role of a 'Security Label'?",
+      "difficulty_b": -1.3,
+      "is_pretest": 1,
+      "options": [
+        {"text": "To identify the owner of a file.", "is_correct": 0, "rationale": "Owner identification is more relevant to DAC."},
+        {"text": "To define the classification level and categories of an object.", "is_correct": 1, "rationale": "Security labels are attached to objects in MAC to specify their sensitivity (e.g., Secret) and their compartments (e.g., HR, Finance)."},
+        {"text": "To list the specific users who have access to a file.", "is_correct": 0, "rationale": "This is an ACL."},
+        {"text": "To encrypt the data within the object.", "is_correct": 0, "rationale": "Labels are metadata, not encryption."}
+      ]
+    },
+    {
+      "id": "GEN_2026_454",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following describes a 'Type II' error in biometrics?",
+      "difficulty_b": 1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "False Rejection Rate (FRR)", "is_correct": 0, "rationale": "FRR is a Type I error."},
+        {"text": "False Acceptance Rate (FAR)", "is_correct": 1, "rationale": "A Type II error (FAR) occurs when an unauthorized person is incorrectly accepted by the system. This is a critical security failure."},
+        {"text": "Crossover Error Rate (CER)", "is_correct": 0, "rationale": "CER is where FAR and FRR are equal."},
+        {"text": "Failure to Enroll (FTE)", "is_correct": 0, "rationale": "FTE is when a user cannot provide a sample."}
+      ]
+    },
+    {
+      "id": "GEN_2026_455",
+      "domain_id": 5,
+      "topic": "Identity Management Life Cycle",
+      "stem": "Which of the following is a key part of 'Identity Life Cycle' management?",
+      "difficulty_b": -1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Only the initial creation of an account.", "is_correct": 0, "rationale": "Life cycle includes all stages from creation to deletion."},
+        {"text": "The continuous process of provisioning, maintaining, and eventually deprovisioning an identity.", "is_correct": 1, "rationale": "Identity life cycle management covers the entire 'birth to death' of a digital identity within an organization."},
+        {"text": "The physical hardware used to store passwords.", "is_correct": 0, "rationale": "This is a technical storage component."},
+        {"text": "The annual security awareness training.", "is_correct": 0, "rationale": "This is a separate administrative control."}
+      ]
+    },
+    {
+      "id": "GEN_2026_456",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "A company implements a 'Time-of-Day' restriction on all user logins. This is an example of which type of access control?",
+      "difficulty_b": 1.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Discretionary Access Control (DAC)", "is_correct": 0, "rationale": "DAC is based on owner discretion."},
+        {"text": "Rule-Based Access Control", "is_correct": 1, "rationale": "Rule-based access control applies global constraints (like time-of-day or location) regardless of the user's role or individual permissions."},
+        {"text": "Role-Based Access Control (RBAC)", "is_correct": 0, "rationale": "RBAC is based on job functions."},
+        {"text": "Mandatory Access Control (MAC)", "is_correct": 0, "rationale": "MAC is based on labels and clearances."}
+      ]
+    },
+    {
+      "id": "GEN_2026_457",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the Bell-LaPadula model, what does the 'Simple Security Property' prevent?",
+      "difficulty_b": 1.5,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Writing data to a lower classification.", "is_correct": 0, "rationale": "This is the Star (*) Property."},
+        {"text": "Reading data from a higher classification ('No Read Up').", "is_correct": 1, "rationale": "The Simple Security Property protects confidentiality by ensuring users can only read data at or below their own clearance level."},
+        {"text": "Modifying data at any level.", "is_correct": 0, "rationale": "This is not what 'Simple Security' refers to."},
+        {"text": "Deleting data from the system.", "is_correct": 0, "rationale": "Deletion is not a primary focus of the foundational Bell-LaPadula properties."}
+      ]
+    },
+    {
+      "id": "GEN_2026_458",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following technologies is used for 'Single Sign-On' across different organizations on the web?",
+      "difficulty_b": -1.4,
+      "is_pretest": 1,
+      "options": [
+        {"text": "Kerberos", "is_correct": 0, "rationale": "Kerberos is primarily for internal networks (intranets)."},
+        {"text": "SAML (Security Assertion Markup Language)", "is_correct": 1, "rationale": "SAML is the industry standard for exchanging authentication and authorization data between an Identity Provider and a Service Provider, enabling cross-domain SSO."},
+        {"text": "RADIUS", "is_correct": 0, "rationale": "RADIUS is for network access AAA."},
+        {"text": "LDAP", "is_correct": 0, "rationale": "LDAP is for directory access."}
+      ]
+    },
+    {
+      "id": "GEN_2026_459",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which principle is most closely violated if a user who moves from Marketing to Sales keeps their old Marketing permissions?",
+      "difficulty_b": -1.8,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Separation of Duties", "is_correct": 0, "rationale": "SoD is about multi-person processes."},
+        {"text": "Least Privilege", "is_correct": 1, "rationale": "Least privilege requires that users only have the permissions they need for their current role. Keeping old permissions leads to 'privilege creep'."},
+        {"text": "Accountability", "is_correct": 0, "rationale": "Accountability is about tracing actions to a subject."},
+        {"text": "Need to Know", "is_correct": 0, "rationale": "Need to know is a subset of least privilege, but least privilege is the broader principle violated here."}
+      ]
+    },
+    {
+      "id": "GEN_2026_460",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following biometric factors is generally considered the LEAST intrusive for users?",
+      "difficulty_b": -1.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Retina Scan", "is_correct": 0, "rationale": "Highly intrusive (requires close eye contact)."},
+        {"text": "Fingerprint Scan", "is_correct": 0, "rationale": "Requires physical contact."},
+        {"text": "Facial Recognition", "is_correct": 1, "rationale": "Can be done from a distance without the user's active cooperation (in some cases) or physical contact, making it very non-intrusive."},
+        {"text": "Iris Scan", "is_correct": 0, "rationale": "Less intrusive than retina, but more than face."}
+      ]
+    },
+    {
+      "id": "GEN_2026_461",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the Biba integrity model, which property prevents a low-integrity subject from writing to a high-integrity object?",
+      "difficulty_b": 1.7,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Simple Integrity Axiom", "is_correct": 0, "rationale": "This is 'No Read Down'."},
+        {"text": "Star (*) Integrity Axiom ('No Write Up')", "is_correct": 1, "rationale": "The Star (*) Integrity Axiom prevents a subject at a lower integrity level from modifying an object at a higher integrity level, protecting the high-integrity data from contamination."},
+        {"text": "Invocation Property", "is_correct": 0, "rationale": "This prevents 'invoking' higher integrity subjects."},
+        {"text": "Simple Security Property", "is_correct": 0, "rationale": "This is a Bell-LaPadula property."}
+      ]
+    },
+    {
+      "id": "GEN_2026_462",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "What is the primary purpose of 'Salt' when hashing passwords?",
+      "difficulty_b": 1.3,
+      "is_pretest": 0,
+      "options": [
+        {"text": "To make the password longer.", "is_correct": 0, "rationale": "It adds characters, but the goal is uniqueness."},
+        {"text": "To ensure that identical passwords result in different hashes for different users, defeating rainbow tables.", "is_correct": 1, "rationale": "Salting adds a unique, random value to each password before hashing, which prevents an attacker from using precomputed lists of hashes (rainbow tables) to crack the passwords."},
+        {"text": "To encrypt the password so it can be recovered.", "is_correct": 0, "rationale": "Hashing is a one-way function; it's not encryption."},
+        {"text": "To automatically check for common passwords.", "is_correct": 0, "rationale": "This is a separate password policy check."}
+      ]
+    },
+    {
+      "id": "GEN_2026_463",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is an example of a 'Technical' or 'Logical' access control?",
+      "difficulty_b": -1.9,
+      "is_pretest": 1,
+      "options": [
+        {"text": "A security guard.", "is_correct": 0, "rationale": "Physical."},
+        {"text": "A firewall.", "is_correct": 1, "rationale": "Technical/Logical controls are implemented using hardware and software to restrict access (e.g., encryption, firewalls, ACLs)."},
+        {"text": "An acceptable use policy.", "is_correct": 0, "rationale": "Administrative."},
+        {"text": "A fence.", "is_correct": 0, "rationale": "Physical."}
+      ]
+    },
+    {
+      "id": "GEN_2026_464",
+      "domain_id": 5,
+      "topic": "Trust Domains and Solutions",
+      "stem": "In a SAML-based federation, which entity is the 'Identity Provider' (IdP)?",
+      "difficulty_b": 1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "The website where the user wants to log in.", "is_correct": 0, "rationale": "This is the Service Provider (SP)."},
+        {"text": "The system that authenticates the user and provides an identity assertion.", "is_correct": 1, "rationale": "The IdP (e.g., Azure AD, Okta, or a corporate AD) is responsible for verifying the user's identity and telling the SP who they are."},
+        {"text": "The user's web browser.", "is_correct": 0, "rationale": "The browser is the 'User Agent'."},
+        {"text": "The internet service provider.", "is_correct": 0, "rationale": "The ISP just provides the connection."}
+      ]
+    },
+    {
+      "id": "GEN_2026_465",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following is a drawback of using 'Security Questions' (Knowledge-Based Authentication) for password resets?",
+      "difficulty_b": -1.5,
+      "is_pretest": 0,
+      "options": [
+        {"text": "They are too expensive to implement.", "is_correct": 0, "rationale": "They are very cheap."},
+        {"text": "The answers can often be found through social engineering or public records (e.g., 'What is your mother's maiden name?').", "is_correct": 1, "rationale": "Static KBA relies on information that is often not truly secret, making it easy for an attacker to guess or research the answers."},
+        {"text": "They require specialized hardware.", "is_correct": 0, "rationale": "No hardware required."},
+        {"text": "Users always forget their own birthday.", "is_correct": 0, "rationale": "While users do forget answers, the primary *security* drawback is the ease of discovery by attackers."}
+      ]
+    },
+    {
+      "id": "GEN_2026_466",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the context of the Bell-LaPadula model, what does 'No Write Down' (the Star Property) specifically protect?",
+      "difficulty_b": 1.8,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Integrity", "is_correct": 0, "rationale": "Biba/Clark-Wilson protect integrity."},
+        {"text": "Confidentiality", "is_correct": 1, "rationale": "The Star Property prevents someone with access to sensitive information from 'writing it down' to a less secure level, thus protecting the confidentiality of the data."},
+        {"text": "Availability", "is_correct": 0, "rationale": "Bell-LaPadula does not address availability."},
+        {"text": "Non-repudiation", "is_correct": 0, "rationale": "Bell-LaPadula does not address non-repudiation."}
+      ]
+    },
+    {
+      "id": "GEN_2026_467",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is an example of 'Two-Person Control'?",
+      "difficulty_b": -1.3,
+      "is_pretest": 1,
+      "options": [
+        {"text": "Requiring two different passwords for one person to log in.", "is_correct": 0, "rationale": "This is multi-factor/multi-step authentication."},
+        {"text": "Requiring two different employees to enter their own keys at the same time to launch a missile.", "is_correct": 1, "rationale": "Two-person control requires the active participation of two authorized individuals to complete a highly sensitive task, ensuring oversight and preventing a single rogue actor from succeeding."},
+        {"text": "Giving an administrator two different accounts (one for daily use, one for admin tasks).", "is_correct": 0, "rationale": "This is separation of privilege."},
+        {"text": "Having a backup administrator in case the primary one is sick.", "is_correct": 0, "rationale": "This is redundancy."}
+      ]
+    },
+    {
+      "id": "GEN_2026_468",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "In MFA, which of the following falls into the 'Something you possess' (or have) category?",
+      "difficulty_b": -1.7,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A PIN.", "is_correct": 0, "rationale": "Something you know."},
+        {"text": "A hardware token (like an RSA SecureID fob).", "is_correct": 1, "rationale": "A hardware token is a physical device that the user must have in their possession to authenticate."},
+        {"text": "A fingerprint.", "is_correct": 0, "rationale": "Something you are."},
+        {"text": "Your mother's maiden name.", "is_correct": 0, "rationale": "Something you know."}
+      ]
+    },
+    {
+      "id": "GEN_2026_469",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "Which of the following describes the 'Brewer-Nash' (Chinese Wall) model?",
+      "difficulty_b": 2.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A system for protecting commercial data from unauthorized modification.", "is_correct": 0, "rationale": "This is Clark-Wilson."},
+        {"text": "An access control model that dynamically restricts a user's access based on their previous activity to prevent conflicts of interest.", "is_correct": 1, "rationale": "Brewer-Nash is specifically designed to prevent conflicts of interest, common in consulting or law firms, by ensuring that a user who has seen data for Company A cannot see data for its competitor, Company B."},
+        {"text": "A model that uses labels and clearances for multi-level security.", "is_correct": 0, "rationale": "This is Bell-LaPadula/Biba."},
+        {"text": "A model where the owner of the data decides who can see it.", "is_correct": 0, "rationale": "This is DAC."}
+      ]
+    },
+    {
+      "id": "GEN_2026_470",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "What is the primary risk of 'Privilege Creep'?",
+      "difficulty_b": -1.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "It makes the server run slowly.", "is_correct": 0, "rationale": "No impact on server performance."},
+        {"text": "Users end up with more access than they need for their current role, violating the principle of least privilege.", "is_correct": 1, "rationale": "Privilege creep occurs when a user's old permissions are not removed as they move between roles, increasing the attack surface if their account is compromised."},
+        {"text": "It is too expensive to manage.", "is_correct": 0, "rationale": "Managing permissions is a cost, but 'creep' is the risk resulting from *poor* management."},
+        {"text": "It causes conflicts with the operating system's kernel.", "is_correct": 0, "rationale": "No impact on the kernel."}
+      ]
+    },
+    {
+      "id": "GEN_2026_471",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following biometric factors is most likely to be affected by the user's emotional state or health (e.g., having a cold)?",
+      "difficulty_b": 1.2,
+      "is_pretest": 1,
+      "options": [
+        {"text": "Fingerprint", "is_correct": 0, "rationale": "Not affected by emotions."},
+        {"text": "Voice Recognition", "is_correct": 1, "rationale": "Voice patterns (both physiological and behavioral) can change significantly due to illness, stress, or excitement, leading to potential authentication failures."},
+        {"text": "Iris Scan", "is_correct": 0, "rationale": "Not affected by emotions."},
+        {"text": "Retina Scan", "is_correct": 0, "rationale": "Not affected by emotions."}
+      ]
+    },
+    {
+      "id": "GEN_2026_472",
+      "domain_id": 5,
+      "topic": "Identity Management Life Cycle",
+      "stem": "Which stage of the identity life cycle involves assigning a user the permissions they need for their new job?",
+      "difficulty_b": -1.3,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Identity Proofing", "is_correct": 0, "rationale": "This is the initial vetting."},
+        {"text": "Provisioning", "is_correct": 1, "rationale": "Provisioning is the process of creating a user's account and granting them the necessary access rights and resources."},
+        {"text": "Deprovisioning", "is_correct": 0, "rationale": "This is removing access."},
+        {"text": "Recertification", "is_correct": 0, "rationale": "This is reviewing existing access."}
+      ]
+    },
+    {
+      "id": "GEN_2026_473",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is a 'Directive' control?",
+      "difficulty_b": 1.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A firewall.", "is_correct": 0, "rationale": "Technical."},
+        {"text": "An 'Acceptable Use Policy' that all employees must sign.", "is_correct": 1, "rationale": "Directive controls are administrative in nature and provide guidance or rules for behavior (e.g., policies, signs, training)."},
+        {"text": "A locked door.", "is_correct": 0, "rationale": "Physical."},
+        {"text": "An audit log.", "is_correct": 0, "rationale": "Detective."}
+      ]
+    },
+    {
+      "id": "GEN_2026_474",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the Mandatory Access Control model, who has the authority to change the classification level of a file?",
+      "difficulty_b": 1.9,
+      "is_pretest": 0,
+      "options": [
+        {"text": "The user who created the file.", "is_correct": 0, "rationale": "In MAC, the creator (owner) cannot usually change the label; this is why it's 'mandatory'."},
+        {"text": "A central security administrator or authority.", "is_correct": 1, "rationale": "In MAC, access policy and classification labels are centrally managed and enforced by the system, not by individual users."},
+        {"text": "Any user with 'Admin' rights on their own computer.", "is_correct": 0, "rationale": "Standard admin rights don't necessarily grant label management in a strict MAC environment."},
+        {"text": "The department head.", "is_correct": 0, "rationale": "Access is determined by labels and clearances, not just management hierarchy, unless that hierarchy is formally mapped into the MAC system."}
+      ]
+    },
+    {
+      "id": "GEN_2026_475",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "What is the primary benefit of 'Federated Identity' for an organization that uses many different cloud services?",
+      "difficulty_b": -1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "It eliminates the need for any internal passwords.", "is_correct": 0, "rationale": "Users still need a password (or other factor) for their primary IdP."},
+        {"text": "It provides a centralized point for managing user access across multiple third-party systems, simplifying onboarding and deprovisioning.", "is_correct": 1, "rationale": "Federation allows the organization to control access to external cloud apps (SaaS) from their own internal identity system (e.g., ADFS or Azure AD)."},
+        {"text": "It encrypts all data stored in the cloud.", "is_correct": 0, "rationale": "Federation is about access, not storage encryption."},
+        {"text": "It is cheaper than using traditional logins.", "is_correct": 0, "rationale": "It has its own implementation and management costs, though it improves efficiency."}
+      ]
+    },
+    {
+      "id": "GEN_2026_476",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is a 'Corrective' control?",
+      "difficulty_b": 1.1,
+      "is_pretest": 1,
+      "options": [
+        {"text": "A password policy.", "is_correct": 0, "rationale": "Preventive."},
+        {"text": "Restoring a system from a clean backup after it was compromised.", "is_correct": 1, "rationale": "Corrective controls are used after an incident to return the system to a secure or operational state."},
+        {"text": "An IPS alert.", "is_correct": 0, "rationale": "Detective."},
+        {"text": "A security guard.", "is_correct": 0, "rationale": "Preventive/Physical."}
+      ]
+    },
+    {
+      "id": "GEN_2026_477",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "Which access control model is based on the subject's job function or position within the organization?",
+      "difficulty_b": -2.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Discretionary Access Control (DAC)", "is_correct": 0, "rationale": "DAC is based on owner discretion."},
+        {"text": "Role-Based Access Control (RBAC)", "is_correct": 1, "rationale": "In RBAC, permissions are assigned to roles, and users are assigned to those roles based on their job duties."},
+        {"text": "Mandatory Access Control (MAC)", "is_correct": 0, "rationale": "MAC is based on labels and clearances."},
+        {"text": "Attribute-Based Access Control (ABAC)", "is_correct": 0, "rationale": "ABAC is based on arbitrary attributes."}
+      ]
+    },
+    {
+      "id": "GEN_2026_478",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "What is the primary vulnerability of 'Single Sign-On' (SSO)?",
+      "difficulty_b": -1.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "It is too difficult for users to use.", "is_correct": 0, "rationale": "SSO is very easy for users."},
+        {"text": "A single compromised credential can grant an attacker access to multiple, unrelated systems.", "is_correct": 1, "rationale": "This is the 'single point of failure' risk of SSO. If an attacker gets the SSO password, they get into every application that uses it."},
+        {"text": "It requires more server memory than traditional login.", "is_correct": 0, "rationale": "The resource impact is generally not a primary security concern."},
+        {"text": "It is incompatible with multi-factor authentication.", "is_correct": 0, "rationale": "SSO is actually very compatible with and often combined with MFA."}
+      ]
+    },
+    {
+      "id": "GEN_2026_479",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the Biba integrity model, what is the 'Simple Integrity Axiom'?",
+      "difficulty_b": 1.6,
+      "is_pretest": 0,
+      "options": [
+        {"text": "No read up", "is_correct": 0, "rationale": "This is Bell-LaPadula Simple Security."},
+        {"text": "No read down", "is_correct": 1, "rationale": "The Biba Simple Integrity Axiom prevents a subject from reading an object at a lower integrity level, ensuring they are not 'contaminated' by untrustworthy data."},
+        {"text": "No write up", "is_correct": 0, "rationale": "This is the Biba Star (*) Integrity Axiom."},
+        {"text": "No write down", "is_correct": 0, "rationale": "This is the Bell-LaPadula Star (*) Property."}
+      ]
+    },
+    {
+      "id": "GEN_2026_480",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following describes 'Something you are' in the context of authentication?",
+      "difficulty_b": -2.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A password.", "is_correct": 0, "rationale": "Something you know."},
+        {"text": "A fingerprint scan.", "is_correct": 1, "rationale": "Biometrics (like fingerprints, iris scans, or facial recognition) fall into the 'Something you are' category."},
+        {"text": "A smart card.", "is_correct": 0, "rationale": "Something you have."},
+        {"text": "A security question.", "is_correct": 0, "rationale": "Something you know."}
+      ]
+    },
+    {
+      "id": "GEN_2026_481",
+      "domain_id": 5,
+      "topic": "Identity Management Life Cycle",
+      "stem": "What is 'Recertification' in an IAM program?",
+      "difficulty_b": 1.4,
+      "is_pretest": 1,
+      "options": [
+        {"text": "Testing a user's knowledge of the security policy.", "is_correct": 0, "rationale": "This is a training quiz."},
+        {"text": "A periodic review where managers must confirm that their employees still require the access they currently have.", "is_correct": 1, "rationale": "Recertification (or access review) is a critical control to identify and remove unnecessary permissions (combating privilege creep)."},
+        {"text": "Re-issuing all user passwords every 90 days.", "is_correct": 0, "rationale": "This is password rotation."},
+        {"text": "Checking if the company's security certificates have expired.", "is_correct": 0, "rationale": "This is certificate management."}
+      ]
+    },
+    {
+      "id": "GEN_2026_482",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is an example of 'Need to Know'?",
+      "difficulty_b": -1.6,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Giving everyone in the company 'Read' access to the HR files.", "is_correct": 0, "rationale": "This violates need-to-know."},
+        {"text": "Restricting a user's access so they can only see the specific project files they are working on, even if they have the same role as others in the department.", "is_correct": 1, "rationale": "Need-to-know is a more granular restriction than role-based access, ensuring that even authorized users only see the specific information they need for a particular task."},
+        {"text": "Requiring a password to open a file.", "is_correct": 0, "rationale": "This is just authentication/access control."},
+        {"text": "Telling employees about the new security policy.", "is_correct": 0, "rationale": "This is a general announcement."}
+      ]
+    },
+    {
+      "id": "GEN_2026_483",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "Which of the following describes 'Implicit Deny'?",
+      "difficulty_b": -1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A user is told their access was denied, but not why.", "is_correct": 0, "rationale": "Vague error message."},
+        {"text": "Any action that is not specifically permitted is blocked by default.", "is_correct": 1, "rationale": "Implicit deny is a 'secure-by-default' stance used in firewalls and ACLs where everything is forbidden unless an explicit 'Allow' rule exists."},
+        {"text": "An administrator manually blocks a user's account.", "is_correct": 0, "rationale": "Explicit administrative action."},
+        {"text": "The system automatically blocks an IP address after 5 failed login attempts.", "is_correct": 0, "rationale": "Dynamic technical control."}
+      ]
+    },
+    {
+      "id": "GEN_2026_484",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "In the context of biometrics, what is the 'Crossover Error Rate' (CER)?",
+      "difficulty_b": 1.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "The point where the False Acceptance Rate is at its lowest.", "is_correct": 0, "rationale": "FAR is lowest when the system is extremely strict."},
+        {"text": "The point where the False Acceptance Rate and False Rejection Rate are equal, used to compare the overall accuracy of different systems.", "is_correct": 1, "rationale": "The CER (or Equal Error Rate) is the standard metric for comparing biometric device accuracy. A lower CER indicates a more accurate system."},
+        {"text": "The rate at which users are unable to provide a usable biometric sample.", "is_correct": 0, "rationale": "This is the Failure to Enroll (FTE) rate."},
+        {"text": "The point where the system crashes due to too many users.", "is_correct": 0, "rationale": "No connection to CER."}
+      ]
+    },
+    {
+      "id": "GEN_2026_485",
+      "domain_id": 5,
+      "topic": "Trust Domains and Solutions",
+      "stem": "When a company uses 'Kerberos', what is the 'KDC'?",
+      "difficulty_b": 1.5,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A type of encryption used for user passwords.", "is_correct": 0, "rationale": "No."},
+        {"text": "The Key Distribution Center, which acts as the trusted third party and handles authentication and ticket issuance.", "is_correct": 1, "rationale": "The KDC is the central server in a Kerberos environment that contains the Authentication Service (AS) and the Ticket Granting Service (TGS)."},
+        {"text": "The workstation where the user logs in.", "is_correct": 0, "rationale": "This is the 'client'."},
+        {"text": "The network router that handles the traffic.", "is_correct": 0, "rationale": "No."}
+      ]
+    },
+    {
+      "id": "GEN_2026_486",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In the context of the Bell-LaPadula model, what does 'No Read Up' (the Simple Security Property) specifically protect?",
+      "difficulty_b": 1.8,
+      "is_pretest": 1,
+      "options": [
+        {"text": "Availability", "is_correct": 0, "rationale": "Bell-LaPadula doesn't address availability."},
+        {"text": "Integrity", "is_correct": 0, "rationale": "Biba/Clark-Wilson address integrity."},
+        {"text": "Confidentiality", "is_correct": 1, "rationale": "No Read Up ensures that users cannot access information at a higher classification level than their clearance, thus protecting confidentiality."},
+        {"text": "Non-repudiation", "is_correct": 0, "rationale": "No."}
+      ]
+    },
+    {
+      "id": "GEN_2026_487",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following describes 'Accountability' in the context of access control?",
+      "difficulty_b": -1.9,
+      "is_pretest": 0,
+      "options": [
+        {"text": "The ability to prove who you are.", "is_correct": 0, "rationale": "This is authentication."},
+        {"text": "The ability to trace every action in the system back to a specific, unique subject through logs and audit trails.", "is_correct": 1, "rationale": "Accountability ensures that individuals are responsible for their actions and that those actions can be definitively linked to them."},
+        {"text": "The process of granting permissions to a user.", "is_correct": 0, "rationale": "This is authorization."},
+        {"text": "The system's ability to remain available even during an attack.", "is_correct": 0, "rationale": "This is resilience/availability."}
+      ]
+    },
+    {
+      "id": "GEN_2026_488",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following is an example of 'Somewhere you are' authentication?",
+      "difficulty_b": 1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A fingerprint.", "is_correct": 0, "rationale": "Something you are."},
+        {"text": "Restricting a user's login based on their current IP address or GPS location.", "is_correct": 1, "rationale": "Geolocation-based authentication uses the user's physical or logical location as an additional factor or constraint."},
+        {"text": "A password.", "is_correct": 0, "rationale": "Something you know."},
+        {"text": "A smart card.", "is_correct": 0, "rationale": "Something you have."}
+      ]
+    },
+    {
+      "id": "GEN_2026_489",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "Which model is primarily focused on 'Integrity' and is often used in commercial applications where 'well-formed transactions' are important?",
+      "difficulty_b": 2.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Bell-LaPadula", "is_correct": 0, "rationale": "Confidentiality."},
+        {"text": "Clark-Wilson", "is_correct": 1, "rationale": "Clark-Wilson is a formal integrity model designed for commercial environments, emphasizing separation of duties and well-formed transactions."},
+        {"text": "Discretionary Access Control (DAC)", "is_correct": 0, "rationale": "Owner-based."},
+        {"text": "Role-Based Access Control (RBAC)", "is_correct": 0, "rationale": "Role-based."}
+      ]
+    },
+    {
+      "id": "GEN_2026_490",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "What is the primary goal of 'Least Privilege'?",
+      "difficulty_b": -2.4,
+      "is_pretest": 1,
+      "options": [
+        {"text": "To make the system as easy to use as possible.", "is_correct": 0, "rationale": "No, it adds complexity."},
+        {"text": "To ensure that users only have the minimum set of permissions required to perform their current job functions, reducing the potential damage from a compromise.", "is_correct": 1, "rationale": "Least privilege is a fundamental security principle meant to limit the impact of security incidents."},
+        {"text": "To give everyone 'Read' access to all files.", "is_correct": 0, "rationale": "This is a violation of least privilege."},
+        {"text": "To ensure that all users have identical permissions.", "is_correct": 0, "rationale": "No."}
+      ]
+    },
+    {
+      "id": "GEN_2026_491",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "Which of the following is a drawback of using 'Biometric' systems?",
+      "difficulty_b": 1.2,
+      "is_pretest": 0,
+      "options": [
+        {"text": "They are too fast for most users.", "is_correct": 0, "rationale": "Speed is an advantage."},
+        {"text": "The concern that biometric data could be used for other purposes, such as surveillance, leading to user privacy issues.", "is_correct": 1, "rationale": "Privacy and 'mission creep' are significant social and legal concerns with biometric data collection."},
+        {"text": "They are easily guessed by attackers.", "is_correct": 0, "rationale": "No."},
+        {"text": "They don't work in cold weather.", "is_correct": 0, "rationale": "Some sensors might be affected, but it's not a general drawback of the concept."}
+      ]
+    },
+    {
+      "id": "GEN_2026_492",
+      "domain_id": 5,
+      "topic": "Identity Management Life Cycle",
+      "stem": "When should 'Deprovisioning' occur?",
+      "difficulty_b": -1.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Once a year.", "is_correct": 0, "rationale": "Should be event-driven."},
+        {"text": "Immediately when an employee leaves the company or no longer needs access to a particular resource.", "is_correct": 1, "rationale": "Prompt deprovisioning is critical to prevent 'orphan accounts' and unauthorized access by former employees."},
+        {"text": "Only when the IT manager has time.", "is_correct": 0, "rationale": "No, it's a high-priority security task."},
+        {"text": "Every time a user changes their password.", "is_correct": 0, "rationale": "No."}
+      ]
+    },
+    {
+      "id": "GEN_2026_493",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is a 'Preventive' control?",
+      "difficulty_b": 1.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "An audit report.", "is_correct": 0, "rationale": "Detective."},
+        {"text": "A biometric lock on a door.", "is_correct": 1, "rationale": "Preventive controls are designed to stop an unauthorized act before it happens."},
+        {"text": "A security camera.", "is_correct": 0, "rationale": "Detective/Deterrent."},
+        {"text": "A system log.", "is_correct": 0, "rationale": "Detective."}
+      ]
+    },
+    {
+      "id": "GEN_2026_494",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "In a Mandatory Access Control system, which of the following is required for a user to access a file labeled 'Secret' in the 'Finance' category?",
+      "difficulty_b": 1.7,
+      "is_pretest": 1,
+      "options": [
+        {"text": "A 'Secret' clearance or higher.", "is_correct": 0, "rationale": "Wait, they need BOTH the clearance AND the category."},
+        {"text": "A 'Secret' clearance or higher, AND formal membership in the 'Finance' category (Need to Know).", "is_correct": 1, "rationale": "MAC requires that the user's clearance meet or exceed the classification, and that they have access to all required compartments/categories."},
+        {"text": "The permission of the file's owner.", "is_correct": 0, "rationale": "This is DAC."},
+        {"text": "Just being in the 'Finance' department.", "is_correct": 0, "rationale": "Department membership doesn't automatically grant MAC clearance."}
+      ]
+    },
+    {
+      "id": "GEN_2026_495",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "What is the primary benefit of 'Single Sign-On' (SSO) for an organization?",
+      "difficulty_b": -1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "It makes the network faster.", "is_correct": 0, "rationale": "No."},
+        {"text": "It reduces the number of support tickets related to forgotten passwords and improves user productivity.", "is_correct": 1, "rationale": "SSO improves efficiency for both users and the IT helpdesk by minimizing the number of credentials to be managed."},
+        {"text": "It eliminates the need for any authentication.", "is_correct": 0, "rationale": "No."},
+        {"text": "It ensures that all users have identical permissions.", "is_correct": 0, "rationale": "No."}
+      ]
+    },
+    {
+      "id": "GEN_2026_496",
+      "domain_id": 5,
+      "topic": "Authorization Mechanisms",
+      "stem": "Which of the following is a 'Deterrent' control?",
+      "difficulty_b": 1.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A firewall.", "is_correct": 0, "rationale": "Preventive."},
+        {"text": "A large 'No Trespassing' sign and a visible security camera.", "is_correct": 1, "rationale": "Deterrent controls are intended to discourage potential attackers from attempting a breach by warning them of the consequences or the difficulty."},
+        {"text": "An audit log.", "is_correct": 0, "rationale": "Detective."},
+        {"text": "A backup server.", "is_correct": 0, "rationale": "Corrective."}
+      ]
+    },
+    {
+      "id": "GEN_2026_497",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "Which access control model allows the owner of a resource to define who can access it?",
+      "difficulty_b": -2.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "Mandatory Access Control (MAC)", "is_correct": 0, "rationale": "Centrally managed labels."},
+        {"text": "Discretionary Access Control (DAC)", "is_correct": 1, "rationale": "In DAC, the 'discretion' of the owner determines access permissions."},
+        {"text": "Role-Based Access Control (RBAC)", "is_correct": 0, "rationale": "Role-based."},
+        {"text": "Rule-Based Access Control", "is_correct": 0, "rationale": "Rule-based."}
+      ]
+    },
+    {
+      "id": "GEN_2026_498",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "What is 'Salt' in the context of password storage?",
+      "difficulty_b": -1.4,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A type of encryption.", "is_correct": 0, "rationale": "No."},
+        {"text": "A unique, random value added to a password before it is hashed to ensure a unique hash result.", "is_correct": 1, "rationale": "Salts prevent rainbow table attacks and ensure that users with the same password have different hashes in the database."},
+        {"text": "A secret key used to decrypt the password.", "is_correct": 0, "rationale": "No."},
+        {"text": "A method of clearing the browser cache.", "is_correct": 0, "rationale": "No."}
+      ]
+    },
+    {
+      "id": "GEN_2026_499",
+      "domain_id": 5,
+      "topic": "Access Control Models",
+      "stem": "Which property of the Biba model ensures that high-integrity data is not modified by a low-integrity user ('No Write Up')?",
+      "difficulty_b": 1.6,
+      "is_pretest": 1,
+      "options": [
+        {"text": "Simple Integrity Axiom", "is_correct": 0, "rationale": "This is 'No Read Down'."},
+        {"text": "Star (*) Integrity Axiom", "is_correct": 1, "rationale": "The Star Integrity Axiom (No Write Up) prevents low-integrity subjects from writing to objects at a higher integrity level."},
+        {"text": "Invocation Property", "is_correct": 0, "rationale": "This is about invoking services."},
+        {"text": "Simple Security Property", "is_correct": 0, "rationale": "This is a Bell-LaPadula property."}
+      ]
+    },
+    {
+      "id": "GEN_2026_500",
+      "domain_id": 5,
+      "topic": "Identification and Authentication",
+      "stem": "In MFA, what is 'Something you know'?",
+      "difficulty_b": -2.1,
+      "is_pretest": 0,
+      "options": [
+        {"text": "A fingerprint.", "is_correct": 0, "rationale": "Something you are."},
+        {"text": "A password or a PIN.", "is_correct": 1, "rationale": "Knowledge-based factors like passwords, PINs, and security questions fall into this category."},
+        {"text": "A smart card.", "is_correct": 0, "rationale": "Something you have."},
+        {"text": "Your current location.", "is_correct": 0, "rationale": "Somewhere you are."}
+      ]
+    }
+  ]
+}

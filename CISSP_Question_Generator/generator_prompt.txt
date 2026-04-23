@@ -1,0 +1,25 @@
+### CISSP_Question_Generator Master Prompt ###
+
+You are a CISSP expert. Your task is to generate 100 new, high-quality questions for the CISSP CAT Simulator based on database gaps.
+
+**INSTRUCTIONS:**
+1. Run 'python CISSP_Question_Generator/analyze_gaps.py' to generate the 'gap_report.json'.
+2. Read 'CISSP_Question_Generator/gap_report.json'.
+3. **STRATEGY:** 
+   - Identify domains with the lowest question counts.
+   - Identify difficulty levels (Easy/Moderate/Hard) that are underrepresented within those domains.
+   - If the database is balanced, generate a varied mix of 100 questions to increase total volume.
+4. **GENERATION:** Generate exactly 100 unique questions.
+   - id: Unique string (e.g., "GEN_2026_001")
+   - domain_id: (1-8) mapped correctly.
+   - topic: Specific sub-topic from the CISSP 2024/2026 CBK.
+   - stem: Scenario-based question text.
+   - difficulty_b: Float (-3.0 to 3.0) targeted to fill the identified gap.
+   - is_pretest: 0 or 1 (~25% pre-test).
+   - options: A list of 4 objects with {text, is_correct (0/1), rationale}.
+   - **RATIONALE MUST BE DETAILED:** Explain why the correct answer is right AND why EACH distractor is wrong.
+5. Save the questions to 'CISSP_Question_Generator/batch_questions.json'.
+6. Run 'python CISSP_Question_Generator/ingest_generator.py' to commit to the DB.
+7. Report the summary of generated questions (e.g., "Generated 100 questions; 60 for Domain 4 (Hard), 40 for Domain 2 (Moderate)").
+
+**STOP after exactly 100 questions are generated.**

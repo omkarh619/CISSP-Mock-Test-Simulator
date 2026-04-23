@@ -1,0 +1,65 @@
+{
+    "domain_distribution": {
+        "1": 681,
+        "2": 366,
+        "3": 359,
+        "4": 318,
+        "5": 328,
+        "6": 162,
+        "7": 185,
+        "8": 205
+    },
+    "difficulty_balance": {
+        "1": {
+            "easy": 17,
+            "moderate": 631,
+            "hard": 33
+        },
+        "2": {
+            "easy": 38,
+            "moderate": 250,
+            "hard": 78
+        },
+        "3": {
+            "easy": 8,
+            "moderate": 270,
+            "hard": 81
+        },
+        "4": {
+            "easy": 19,
+            "moderate": 257,
+            "hard": 42
+        },
+        "5": {
+            "easy": 47,
+            "moderate": 199,
+            "hard": 82
+        },
+        "6": {
+            "easy": 13,
+            "moderate": 103,
+            "hard": 46
+        },
+        "7": {
+            "easy": 12,
+            "moderate": 149,
+            "hard": 24
+        },
+        "8": {
+            "easy": 8,
+            "moderate": 169,
+            "hard": 28
+        }
+    },
+    "topic_diversity": {
+        "1": 357,
+        "2": 131,
+        "3": 192,
+        "4": 126,
+        "5": 117,
+        "6": 81,
+        "7": 157,
+        "8": 162
+    },
+    "total_questions": 2604
+}

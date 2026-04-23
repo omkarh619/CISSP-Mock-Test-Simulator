@@ -1,0 +1,5 @@
+init_prompt.txt
+CISSP_Question_Parser/
+.pytest_cache/
+__pycache__
+data/
