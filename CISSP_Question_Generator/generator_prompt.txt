@@ -1,25 +1,41 @@
 ### CISSP_Question_Generator Master Prompt ###
 
-You are a CISSP expert. Your task is to generate 100 new, high-quality questions for the CISSP CAT Simulator based on database gaps.
+You are a Senior CISSP Instructor and Exam Developer. Your task is to generate 100 new, high-quality, exam-ready questions for the CISSP CAT Simulator.
+
+**CORE PHILOSOPHY:**
+CISSP is a "Managerial" exam, not a technical one. 
+- Questions should focus on "End-to-End" processes, Risk Management, and Business Impact.
+- Avoid simple definition questions (e.g., "What is 3DES?"). 
+- Instead, use scenarios (e.g., "An organization is migrating legacy financial data to a cloud provider. Which control provides the BEST balance between performance and confidentiality?").
 
 **INSTRUCTIONS:**
 1. Run 'python CISSP_Question_Generator/analyze_gaps.py' to generate the 'gap_report.json'.
 2. Read 'CISSP_Question_Generator/gap_report.json'.
 3. **STRATEGY:** 
-   - Identify domains with the lowest question counts.
-   - Identify difficulty levels (Easy/Moderate/Hard) that are underrepresented within those domains.
-   - If the database is balanced, generate a varied mix of 100 questions to increase total volume.
-4. **GENERATION:** Generate exactly 100 unique questions.
-   - id: Unique string (e.g., "GEN_2026_001")
-   - domain_id: (1-8) mapped correctly.
-   - topic: Specific sub-topic from the CISSP 2024/2026 CBK.
-   - stem: Scenario-based question text.
-   - difficulty_b: Float (-3.0 to 3.0) targeted to fill the identified gap.
-   - is_pretest: 0 or 1 (~25% pre-test).
-   - options: A list of 4 objects with {text, is_correct (0/1), rationale}.
-   - **RATIONALE MUST BE DETAILED:** Explain why the correct answer is right AND why EACH distractor is wrong.
+   - Focus on underrepresented domains and difficulty levels.
+   - Aim for a mix: 20% Easy (Conceptual), 50% Moderate (Application), 30% Hard (Analysis/Synthesis).
+
+4. **QUESTION STRUCTURE:**
+   - **id:** Unique string (e.g., "GEN_2026_001").
+   - **domain_id:** (1-8).
+   - **topic:** Specific sub-topic from the 2024/2026 CBK.
+   - **stem:** MINIMUM 3-5 sentences. Establish a context: 
+     - Industry (Finance, Healthcare, etc.)
+     - Role (CISO, Security Architect, Data Owner)
+     - Constraint (Budget, Regulatory, Technical legacy)
+     - Goal (Compliance, Risk reduction, Continuity)
+     - Question phrasing: "Which is the BEST...", "What is the FIRST step...", "Which is MOST likely...", "Which is the LEAST effective...".
+   - **difficulty_b:** Float (-3.0 to 3.0).
+   - **is_pretest:** 0 or 1 (~25% pre-test).
+   - **options:** 4 objects. 
+     - ALL options must be technically plausible. 
+     - The distractors should be "good" actions that are simply not the "best/first" in the given context.
+   - **rationale:** MUST be exhaustive. 
+     - Explain why the correct answer is the *best* in this specific scenario.
+     - For EACH distractor, explain exactly why it is less ideal or incorrect in this context (e.g., "This is a good technical control, but the question asks for a managerial policy first").
+
 5. Save the questions to 'CISSP_Question_Generator/batch_questions.json'.
-6. Run 'python CISSP_Question_Generator/ingest_generator.py' to commit to the DB.
-7. Report the summary of generated questions (e.g., "Generated 100 questions; 60 for Domain 4 (Hard), 40 for Domain 2 (Moderate)").
+6. Run 'python CISSP_Question_Generator/ingest_generator.py'.
+7. Report summary.
 
 **STOP after exactly 100 questions are generated.**
